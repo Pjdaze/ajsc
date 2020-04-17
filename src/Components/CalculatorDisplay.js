@@ -1,7 +1,7 @@
 import React from "react";
 
 const CalculatorDisplay = () => {
-  return <div>0.0</div>;
+  return <div calculator-display>0.0</div>;
 };
 
 export default CalculatorDisplay;
