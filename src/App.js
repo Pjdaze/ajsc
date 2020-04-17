@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Calculator from "./styled-components/Calculator";
+import CalculatorDisplay from "./Components/CalculatorDisplay";
 
-function App() {
+const myAwseomeStyle = {
+  color: "#222",
+  background: "#fff",
+};
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ myAwseomeStyle }} className="App header">
+      <h1>Free Code Camp JS Calculator</h1>
+      <Calculator>
+        <CalculatorDisplay className="calculator-display" />
+      </Calculator>
     </div>
   );
-}
+};
 
 export default App;
